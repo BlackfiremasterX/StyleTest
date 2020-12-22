@@ -15,9 +15,10 @@
     </style>
     
     
-    <style name="Otodite_ya_s_nozhom">
+    <style name="StyleText_Bangers">
         <item name="android:gravity">center</item>
         <item name="android:layout_margin">15dp</item>
+        <item name="fontFamily">@font/bangers</item>
 
 
 

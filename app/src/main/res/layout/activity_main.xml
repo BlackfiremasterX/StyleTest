@@ -4,19 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/ScreenBackground_Vyanra"
-    android:backgroundTint="#D59537"
+    android:background="@color/background_Screen_1"
+    style="@style/StyleText_Bangers"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
-        style="@style/Otodite_ya_s_nozhom"
+        style="@style/StyleText_Bangers"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:background="@color/ScreenBackground_Vyanra"
-        android:fontFamily="monospace"
+        android:background="@color/background_Screen_2"
         android:padding="4dp"
         android:text="@string/Android_1"
         android:textColor="@color/Text_Template_Color_Otodi"
@@ -39,6 +38,8 @@
 
         <Button
             style="@style/Buttons_Style"
+            android:background="@color/buttonBackground"
+            android:fontFamily="@font/bangers"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -46,6 +47,7 @@
 
         <Button
             style="@style/Buttons_Style"
+            android:fontFamily="@font/bangers"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -53,6 +55,7 @@
 
         <Button
             style="@style/Buttons_Style"
+            android:fontFamily="@font/bangers"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -62,11 +65,13 @@
     </LinearLayout>
 
     <Button
-        android:onClick="Nazhmi"
         android:id="@+id/zhmi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Жми!!!!!!"
+        android:background="@color/yellow"
+        android:fontFamily="@font/bangers"
+        android:onClick="Nazhmi"
+        android:text="Hit!"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toStartOf="@+id/ne_zhmi"
         app:layout_constraintStart_toStartOf="parent"
@@ -76,7 +81,10 @@
         android:id="@+id/ne_zhmi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Не жми!!!!!!!"
+        android:background="@color/yellow"
+        android:fontFamily="@font/bangers"
+        android:onClick="Ne_Zhmi"
+        android:text="Don't Touch!"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -87,6 +95,9 @@
         android:id="@+id/random"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/yellow"
+        android:fontFamily="@font/bangers"
+        android:onClick="Fifty_fifty"
         android:text="50/50"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"

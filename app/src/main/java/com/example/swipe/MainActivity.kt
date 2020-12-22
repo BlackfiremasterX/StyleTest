@@ -16,6 +16,14 @@ class MainActivity : AppCompatActivity() {
         Nazhatie.show()
     }
 
+    fun Ne_Zhmi(view: View){
+        val Nazhatie1 = Toast.makeText(this, "Все таки нажал, а тебя не учили слушаться старших?!", Toast.LENGTH_SHORT)
+        Nazhatie1.show()
+    }
+    fun Fifty_fifty(view: View){
+        val Nazhatie2 = Toast.makeText(this, "Фууууууууууууууууу!", Toast.LENGTH_SHORT)
+        Nazhatie2.show()
+    }
 
 
 }
